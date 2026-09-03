@@ -1,13 +1,5 @@
 -- =====================================================================
 -- PROYECTO : Sistema de Gestión Inmobiliaria
--- ARCHIVO  : 07_events.sql
--- PROPÓSITO: Evento programado mensual de reporte de pagos pendientes
--- ORDEN DE EJECUCIÓN: 7 (después de 06_optimization.sql)
---
--- NOTA: activar el "event scheduler" requiere el privilegio SUPER o
--- SYSTEM_VARIABLES_ADMIN (MySQL 8.0+) y normalmente se ejecuta como
--- una cuenta administrativa, no como los roles de aplicación creados
--- en 05_security.sql.
 -- =====================================================================
 
 USE inmobiliaria_db;
@@ -61,7 +53,7 @@ END$$
 DELIMITER ;
 
 -- ---------------------------------------------------------------------
--- 3) Verificación del evento (referencia)
+-- 3) Verificación del evento 
 -- ---------------------------------------------------------------------
 -- SHOW EVENTS FROM inmobiliaria_db;
 -- SHOW VARIABLES LIKE 'event_scheduler';
@@ -69,9 +61,7 @@ DELIMITER ;
 --   WHERE EVENT_SCHEMA = 'inmobiliaria_db';
 
 -- ---------------------------------------------------------------------
--- 4) Ejecución manual para pruebas (opcional)
--- Para no esperar un mes durante las pruebas del proyecto, se puede
--- invocar manualmente la misma lógica del evento así:
+-- 4) Ejecución manual para pruebas 
 -- ---------------------------------------------------------------------
 -- CALL sp_generar_reporte_pagos_pendientes(); -- (ver alternativa abajo)
 

@@ -1,9 +1,5 @@
 -- =====================================================================
 -- PROYECTO : Sistema de Gestión Inmobiliaria
--- ARCHIVO  : 08_queries.sql
--- PROPÓSITO: Consultas de ejemplo (mínimo 15) usando JOIN, GROUP BY,
---            HAVING, ORDER BY, subconsultas, funciones y agregaciones.
--- ORDEN DE EJECUCIÓN: 8 (último, después de 07_events.sql)
 -- =====================================================================
 
 USE inmobiliaria_db;

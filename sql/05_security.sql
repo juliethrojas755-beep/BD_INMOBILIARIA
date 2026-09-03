@@ -1,13 +1,5 @@
 -- =====================================================================
 -- PROYECTO : Sistema de Gestión Inmobiliaria
--- ARCHIVO  : 05_security.sql
--- PROPÓSITO: Roles y privilegios de MySQL (control de acceso al motor)
--- ORDEN DE EJECUCIÓN: 5 (después de 04_triggers.sql)
---
--- IMPORTANTE: Las contraseñas usadas aquí son FICTICIAS y sirven
--- únicamente como datos de ejemplo para este proyecto académico.
--- En un entorno real deben generarse contraseñas seguras y gestionarse
--- mediante un gestor de secretos, nunca escritas en un script plano.
 -- =====================================================================
 
 USE inmobiliaria_db;
@@ -85,7 +77,6 @@ GRANT EXECUTE ON inmobiliaria_db.* TO 'rol_contador';
 
 -- ---------------------------------------------------------------------
 -- 5) CREACIÓN DE USUARIOS DE MYSQL DE EJEMPLO
--- Contraseñas ficticias, solo para efectos de demostración académica.
 -- ---------------------------------------------------------------------
 DROP USER IF EXISTS 'admin_inmobiliaria'@'localhost';
 DROP USER IF EXISTS 'agente_laura'@'localhost';
@@ -111,7 +102,7 @@ SET DEFAULT ROLE 'rol_contador'      TO 'contador_general'@'localhost';
 FLUSH PRIVILEGES;
 
 -- ---------------------------------------------------------------------
--- 7) EJEMPLOS DE VERIFICACIÓN (referencia, no se ejecutan aquí)
+-- 7) EJEMPLOS DE VERIFICACIÓN 
 -- ---------------------------------------------------------------------
 -- SHOW GRANTS FOR 'agente_laura'@'localhost';
 -- SHOW GRANTS FOR 'contador_general'@'localhost' USING 'rol_contador';

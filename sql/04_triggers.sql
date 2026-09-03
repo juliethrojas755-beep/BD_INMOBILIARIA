@@ -1,8 +1,5 @@
 -- =====================================================================
 -- PROYECTO : Sistema de Gestión Inmobiliaria
--- ARCHIVO  : 04_triggers.sql
--- PROPÓSITO: Triggers de auditoría
--- ORDEN DE EJECUCIÓN: 4 (después de 03_functions.sql)
 -- =====================================================================
 
 USE inmobiliaria_db;
@@ -92,7 +89,6 @@ END$$
 DELIMITER ;
 
 -- ---------------------------------------------------------------------
--- Nota de funcionamiento:
 -- 1) Cuando la aplicación (o un script) hace UPDATE propiedades SET
 --    estado = 'ARRENDADA' WHERE id_propiedad = 5, el Trigger 1 compara
 --    OLD.estado y NEW.estado; si son distintos, inserta una fila en

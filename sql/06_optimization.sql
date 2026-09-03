@@ -1,9 +1,5 @@
 -- =====================================================================
 -- PROYECTO : Sistema de Gestión Inmobiliaria
--- ARCHIVO  : 06_optimization.sql
--- PROPÓSITO: Índices y consultas optimizadas
--- ORDEN DE EJECUCIÓN: 6 (después de 05_security.sql)
---
 -- CRITERIO GENERAL: se indexan columnas que aparecen frecuentemente en
 -- cláusulas WHERE, JOIN, GROUP BY u ORDER BY de las consultas más
 -- comunes del negocio (búsquedas de disponibilidad, filtros por

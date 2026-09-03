@@ -1,8 +1,5 @@
 -- =====================================================================
 -- PROYECTO : Sistema de Gestión Inmobiliaria
--- ARCHIVO  : 03_functions.sql
--- PROPÓSITO: Funciones almacenadas (UDF)
--- ORDEN DE EJECUCIÓN: 3 (después de 02_data.sql)
 -- =====================================================================
 
 USE inmobiliaria_db;
@@ -127,7 +124,7 @@ END$$
 DELIMITER ;
 
 -- ---------------------------------------------------------------------
--- PRUEBAS RÁPIDAS DE LAS FUNCIONES (comentadas, referencia)
+-- PRUEBAS RÁPIDAS DE LAS FUNCIONES 
 -- ---------------------------------------------------------------------
 -- SELECT calcular_comision_venta(300000000.00, 3.00) AS comision_esperada_9000000;
 -- SELECT calcular_deuda_pendiente(2) AS deuda_contrato_2;
