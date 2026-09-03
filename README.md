@@ -55,33 +55,6 @@ inmobiliaria-mysql/
     └── modelo_er.md         -- Modelo entidad-relación y normalización
 ```
 
-## Instalación
-
-Ejecutar los scripts **en este orden exacto**, con un cliente MySQL 8.0+ (por ejemplo `mysql` CLI o MySQL Workbench):
-
-```bash
-mysql -u root -p < sql/01_schema.sql
-mysql -u root -p < sql/02_data.sql
-mysql -u root -p < sql/03_functions.sql
-mysql -u root -p < sql/04_triggers.sql
-mysql -u root -p < sql/05_security.sql
-mysql -u root -p < sql/06_optimization.sql
-mysql -u root -p < sql/07_events.sql
-mysql -u root -p < sql/08_queries.sql
-```
-
-O bien, dentro de una sesión interactiva de `mysql`:
-
-```sql
-SOURCE sql/01_schema.sql;
-SOURCE sql/02_data.sql;
-SOURCE sql/03_functions.sql;
-SOURCE sql/04_triggers.sql;
-SOURCE sql/05_security.sql;
-SOURCE sql/06_optimization.sql;
-SOURCE sql/07_events.sql;
-SOURCE sql/08_queries.sql;
-```
 
 
 ## Ejemplos de uso
